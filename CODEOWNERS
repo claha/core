@@ -43,6 +43,7 @@ homeassistant/components/august/* @bdraco
 homeassistant/components/aurora_abb_powerone/* @davet2001
 homeassistant/components/auth/* @home-assistant/core
 homeassistant/components/automation/* @home-assistant/core
+homeassistant/components/avanza/* @claha
 homeassistant/components/avea/* @pattyland
 homeassistant/components/avri/* @timvancann
 homeassistant/components/awair/* @ahayworth @danielsjf

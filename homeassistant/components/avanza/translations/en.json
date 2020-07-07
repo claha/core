@@ -1,0 +1,22 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+        },
+        "error": {
+            "id_exists": "Already registered instrument id",
+            "id_invalid": "Invalid instrument id",
+            "type_mismatch": "Instrument type does not match instrument id",
+            "unknown": "[%key:common::config_flow::error::unknown%]"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "instrument_type": "Instrument type",
+                    "query": "Search query"
+                }
+            }
+        }
+    },
+    "title": "Avanza"
+}

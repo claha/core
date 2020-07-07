@@ -570,6 +570,9 @@ pyatag==0.3.3.4
 # homeassistant.components.netatmo
 pyatmo==3.3.1
 
+# homeassistant.components.avanza
+pyavanza==0.3.0
+
 # homeassistant.components.blackbird
 pyblackbird==0.5
 
