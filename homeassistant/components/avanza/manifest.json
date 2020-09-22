@@ -1,0 +1,16 @@
+{
+  "domain": "avanza",
+  "name": "Avanza",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/avanza",
+  "requirements": [
+    "pyavanza==0.3.0"
+  ],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": [
+    "@claha"
+  ]
+}
