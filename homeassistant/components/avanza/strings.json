@@ -1,22 +1,29 @@
 {
-  "title": "Avanza",
-  "config": {
-    "step": {
-      "user": {
-        "data": {
-          "host": "[%key:common::config_flow::data::host%]",
-          "username": "[%key:common::config_flow::data::username%]",
-          "password": "[%key:common::config_flow::data::password%]"
+    "title": "Avanza",
+    "config": {
+        "step": {
+            "instrument_search": {
+                "data": {
+                    "instrument_type": "Instrument type",
+                    "instrument_query": "Name of instrument"
+                },
+                "description": "Search for an instrument of a specific type"
+            },
+            "instrument_select": {
+                "data": {
+                    "instrument": "Instrument"
+                },
+                "description": "Select an instrument to track"
+            }
+        },
+        "error": {
+            "request": "REQUEST ERROR",
+            "response": "RESPONSE ERROR",
+            "parse": "PARSE ERROR",
+            "unknown": "[%key:common::config_flow::error::unknown%]"
+        },
+        "abort": {
+            "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
         }
-      }
-    },
-    "error": {
-      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
-      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
-      "unknown": "[%key:common::config_flow::error::unknown%]"
-    },
-    "abort": {
-      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
     }
-  }
 }

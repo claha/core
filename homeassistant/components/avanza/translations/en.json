@@ -4,17 +4,24 @@
             "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
         },
         "error": {
-            "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
-            "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+            "parse": "PARSE ERROR",
+            "request": "REQUEST ERROR",
+            "response": "RESPONSE ERROR",
             "unknown": "[%key:common::config_flow::error::unknown%]"
         },
         "step": {
-            "user": {
+            "instrument_search": {
                 "data": {
-                    "host": "[%key:common::config_flow::data::host%]",
-                    "password": "[%key:common::config_flow::data::password%]",
-                    "username": "[%key:common::config_flow::data::username%]"
-                }
+                    "instrument_query": "Name of instrument",
+                    "instrument_type": "Instrument type"
+                },
+                "description": "Search for an instrument of a specific type"
+            },
+            "instrument_select": {
+                "data": {
+                    "instrument": "Instrument"
+                },
+                "description": "Select an instrument to track"
             }
         }
     },
